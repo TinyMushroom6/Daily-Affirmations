@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Affirmations</title>
+
+    <style>
+        html, body {
+            margin: 0;
+            min-height: 180px;
+            padding: 0;
+            width: 384px;
+            background-color: rgb(239, 222, 204);
+        }
+
+        .modal-content, .modal-header, #words, .pronoun-select {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 22px;
+            font-weight: 400;
+            margin: 0;
+            color: #490227;
+        }
+
+        .modal-header {
+            align-items: center;
+            border-bottom: 0.5px solid #dadada;
+        }
+
+        .modal-content{
+            padding:22px 22px;
+            background-color: rgb(230, 208, 184);
+        }
+
+        .modal-content #button{
+            align-items: center;
+            background-color: rgb(250, 220, 192);
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        #words {
+            font-size: 15px;
+            font-family: monospace;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+    <div class="modal-header">
+        <h1>Daily Affirmations</h1>
+    </div>
+    <div class="pronoun-select">
+        <input type="radio" id="I" name="pronoun" value="I">
+        <label for="I">I</label>
+        <input type="radio" id="you" name="pronoun" value="you">
+        <label for="you">You</label>
+        <input type="radio" id="she" name="pronoun" value="she">
+        <label for="she">She</label>
+        <input type="radio" id="he" name="pronoun" value="he">
+        <label for="he">He</label>
+        <input type="radio" id="they" name="pronoun" value="they">
+        <label for="they">They</label>
+    </div>
+    <div class="modal-content">
+        <button id="button">Press for daily affirmation</button>
+        <p id="words"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
